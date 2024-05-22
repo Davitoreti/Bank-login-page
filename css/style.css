@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  font-family: "Space Grotesk", sans-serif;
+}
+.container label {
+  font-size: 16px;
+}
+.container input {
+  border-radius: 8px;
+  border: 0.5px solid rgba(0, 0, 0, 0.347);
+  height: 50px;
+}
+.container input::placeholder {
+  font-family: "Space Grotesk", sans-serif;
+  padding: 0rem 0.8rem;
+  font-size: 20px;
+}
+
+.section__cards {
+  height: 100vh;
+  width: 30vw;
+  background-image: url("../images/bg-main-desktop.png");
+}
+.section__cards .image__card-front {
+  position: relative;
+  top: 15%;
+  left: 20%;
+  transform: scale(0.3);
+}
+.section__cards .image__card-back {
+  position: relative;
+  top: 5%;
+  left: 20%;
+  transform: scale(0.3);
+}
+
+.section__form {
+  display: flex;
+  align-items: center;
+}
+.section__form .form-cardHolder {
+  margin: 2rem 0rem;
+}
+.section__form .form-cardHolder input {
+  width: 90%;
+  margin-top: 0.5rem;
+}
+.section__form .form-cardNumber {
+  margin: 2rem 0rem;
+}
+.section__form .form-cardNumber input {
+  width: 90%;
+  margin-top: 0.5rem;
+}
+.section__form .form-data {
+  display: flex;
+  width: 90%;
+}
+.section__form .form-data .form-date {
+  width: 50%;
+}
+.section__form .form-data .form-date label {
+  display: block;
+}
+.section__form .form-data .form-date input {
+  width: 45%;
+  margin-top: 0.5rem;
+}
+.section__form .form-data .form-cvc {
+  width: 50%;
+}
+.section__form .form-data .form-cvc label {
+  display: block;
+}
+.section__form .form-data .form-cvc input {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.section__form .form-button {
+  width: 90%;
+  margin-top: 2rem;
+  border-radius: 5px;
+  border: 0.5px solid rgba(0, 0, 0, 0.347);
+  height: 55px;
+  background-color: #220930;
+  color: white;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
