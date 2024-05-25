@@ -11,17 +11,17 @@
   font-family: "Space Grotesk", sans-serif;
 }
 .container label {
-  font-size: 16px;
+  font-size: 13px;
 }
 .container input {
   border-radius: 8px;
   border: 0.5px solid rgba(0, 0, 0, 0.347);
-  height: 50px;
+  height: 45px;
 }
 .container input::placeholder {
   font-family: "Space Grotesk", sans-serif;
   padding: 0rem 0.8rem;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .section__cards {
@@ -32,37 +32,76 @@
 .section__cards .image__card-front {
   position: relative;
   top: 15%;
-  left: 20%;
-  transform: scale(0.3);
+  left: 30%;
+  transform: scale(0.9);
+}
+.section__cards #image-card-logo {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+.section__cards #card-number {
+  position: absolute;
+  bottom: 30%;
+  left: 7%;
+  font-size: 29px;
+  letter-spacing: 3px;
+  color: white;
+}
+.section__cards #card-name {
+  position: absolute;
+  bottom: 10%;
+  left: 7%;
+  text-transform: uppercase;
+  color: white;
+}
+.section__cards #card-dueDate {
+  position: absolute;
+  bottom: 10%;
+  left: 81%;
+  letter-spacing: 3px;
+  color: white;
 }
 .section__cards .image__card-back {
   position: relative;
-  top: 5%;
-  left: 20%;
-  transform: scale(0.3);
+  top: 16%;
+  left: 50%;
+  transform: scale(0.9);
+}
+.section__cards #security-code {
+  position: absolute;
+  top: 44%;
+  left: 79%;
+  letter-spacing: 3px;
+  color: white;
 }
 
 .section__form {
   display: flex;
   align-items: center;
+  margin-left: 3rem;
 }
 .section__form .form-cardHolder {
   margin: 2rem 0rem;
 }
 .section__form .form-cardHolder input {
-  width: 90%;
+  width: 80%;
   margin-top: 0.5rem;
 }
 .section__form .form-cardNumber {
   margin: 2rem 0rem;
 }
+.section__form .form-cardNumber label {
+  display: block;
+}
 .section__form .form-cardNumber input {
-  width: 90%;
+  width: 80%;
   margin-top: 0.5rem;
 }
 .section__form .form-data {
   display: flex;
-  width: 90%;
+  width: 80%;
 }
 .section__form .form-data .form-date {
   width: 50%;
@@ -85,14 +124,43 @@
   margin-top: 0.5rem;
 }
 .section__form .form-button {
-  width: 90%;
+  width: 80%;
   margin-top: 2rem;
   border-radius: 5px;
   border: 0.5px solid rgba(0, 0, 0, 0.347);
-  height: 55px;
+  height: 50px;
   background-color: #220930;
   color: white;
-  font-size: 20px;
+  font-size: 17px;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .section__cards {
+    height: 50%;
+    width: 100%;
+  }
+  .section__cards .image__card-front {
+    position: relative;
+    top: 38.8%;
+    left: 1%;
+    transform: scale(0.7);
+    z-index: 2;
+  }
+  .section__cards .image__card-back {
+    position: relative;
+    top: 0;
+    left: 9.5%;
+    transform: translate(0, -100%) scale(0.7);
+    z-index: 1;
+  }
+  .section__form {
+    position: relative;
+    left: 8%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

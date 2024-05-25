@@ -1,3 +1,13 @@
+@mixin cardNumbers ($letter-spacing, $color){
+    letter-spacing: $letter-spacing;
+    color: $color;
+}
+
+@mixin config-input ($width, $margin-top){
+    width: $width;
+    margin-top: $margin-top;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,19 +21,19 @@
     font-family: "Space Grotesk", sans-serif;
 
     label{
-        font-size: 16px;
+        font-size: 13px;
     }
 
     input{
         border-radius: 8px;
         border: 0.5px solid rgba(0, 0, 0, 0.347);
-        height: 50px;
+        height: 45px;
     }
 
     input::placeholder{
         font-family: "Space Grotesk", sans-serif;
         padding: 0rem 0.8rem;
-        font-size: 20px;
+        font-size: 17px;
     }
 }
 
@@ -35,43 +45,83 @@
     .image__card-front{
         position: relative;
         top: 15%;
-        left: 20%;
-        transform: scale(0.3);
+        left: 30%;
+        transform: scale(0.9);
+    }
+
+    #image-card-logo{
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+    }
+
+    #card-number{
+        position: absolute;
+        bottom: 30%;
+        left: 7%;
+        font-size: 29px;
+        @include cardNumbers(3px, white)
+    }
+
+    #card-name{
+        position: absolute;
+        bottom: 10%;
+        left: 7%;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    #card-dueDate{
+        position: absolute;
+        bottom: 10%;
+        left: 81%;
+        @include cardNumbers(3px, white)
     }
 
     .image__card-back{
         position: relative;
-        top: 5%;
-        left: 20%;
-        transform: scale(0.3);
+        top: 16%;
+        left: 50%;
+        transform: scale(0.9);
+    }
+
+    #security-code{
+        position: absolute;
+        top: 44%;
+        left: 79%;
+        @include cardNumbers(3px, white)
     }
 }
 
 .section__form{
     display: flex;
     align-items: center;
+    margin-left: 3rem;
    
     .form-cardHolder{
         margin: 2rem 0rem;
 
         input{
-            width: 90%;
-            margin-top: 0.5rem;
+            @include config-input (80%, 0.5rem)
         }
     }
 
     .form-cardNumber{
         margin: 2rem 0rem;
 
+        label{
+            display: block;
+        }
+
         input{
-            width: 90%;
-            margin-top: 0.5rem;
+            @include config-input (80%, 0.5rem)
         }
     }
 
     .form-data{
         display: flex;
-        width: 90%;
+        width: 80%;
 
         .form-date{
             width: 50%;
@@ -81,8 +131,7 @@
             }
     
             input{
-                width: 45%;
-                margin-top: 0.5rem;
+                @include config-input(45%, 0.5rem);
             }
         }
     
@@ -94,20 +143,55 @@
             }
 
             input{
-                width: 100%;
-                margin-top: 0.5rem;
+                @include config-input(100%, 0.5rem);
             }
         }
     }
 
     .form-button{
-        width: 90%;
-        margin-top: 2rem;
+        @include config-input(80%, 2rem);
         border-radius: 5px;
         border: 0.5px solid rgba(0, 0, 0, 0.347);
-        height: 55px;
+        height: 50px;
         background-color: #220930;
         color: white;
-        font-size: 20px;
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .section__cards{
+        height: 50%;
+        width: 100%;
+
+        .image__card-front{
+            position: relative;
+            top: 38.8%;
+            left: 1%;
+            transform: scale(0.7);
+            z-index: 2;
+        }
+    
+        .image__card-back{
+            position: relative;
+            top: 0;
+            left: 9.5%;
+            transform: translate( 0, -100%) scale(0.7);
+            z-index: 1;
+        }
+    }
+
+    .section__form{
+        position: relative;
+        left: 8%;
+    
+        .form-data{
+            
+        }
     }
 }
