@@ -134,39 +134,17 @@
   font-size: 17px;
 }
 
-<<<<<<< HEAD
-@media (width: 320px) {
-=======
 @media (min-width: 320px) and (max-width: 375px) {
->>>>>>> 099a1ca9d42dbc9161f7489b675b721781dcf235
   .container {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    width: 100vw;
   }
   .section__cards {
-<<<<<<< HEAD
-    height: 30vh;
-    width: 100%;
-  }
-  .section__cards .image__card-front {
-    position: relative;
-    top: 11%;
-    transform: translate(-41%, 0) scale(0.45);
-    z-index: 2;
-  }
-  .section__cards .image__card-back {
-    position: relative;
-    top: -23%;
-    transform: translate(-51%, -100%) scale(0.45);
-    z-index: 1;
-  }
-=======
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 40vh;
+    height: 35vh;
     width: 100vw;
   }
   .section__cards .image__card-front {
@@ -179,16 +157,24 @@
   .section__cards .image__card-back {
     position: absolute;
     top: 8%;
-    left: 50%;
-    transform: scale(0.55) translate(-80%, -50%);
+    left: 49%;
+    transform: scale(0.55) translate(-80%, -54%);
     z-index: 0;
   }
   .section__form {
-    width: 88%;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    margin-right: 0;
   }
->>>>>>> 099a1ca9d42dbc9161f7489b675b721781dcf235
+  .section__form label {
+    font-size: 0.7rem;
+  }
+  .section__form input::placeholder {
+    font-size: 0.8rem;
+  }
+  .section__form .form-button {
+    font-size: 0.9rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

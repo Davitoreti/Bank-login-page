@@ -164,14 +164,13 @@
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
-        width: 100vw;
     }
 
     .section__cards{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 40vh;
+        height: 35vh;
         width: 100vw;
         
         .image__card-front{
@@ -185,17 +184,27 @@
         .image__card-back{
             position: absolute;
             top: 8%;
-            left: 50%;
-            transform: scale(0.55) translate(-80%, -50%);
+            left: 49%;
+            transform: scale(0.55) translate(-80%, -54%);
             z-index: 0;
         }
     }
 
     .section__form{
-        width: 88%;
         margin-top: 3rem;
-        margin-bottom: 3rem; 
+        margin-bottom: 3rem;
+        margin-right: 0;
 
-        
+        label{
+            font-size: 0.7rem;
+        }
+
+        input::placeholder{
+            font-size: 0.8rem;
+        }
+
+        .form-button{
+        font-size: 0.9rem;
+        }
     }
 }
