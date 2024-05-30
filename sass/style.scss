@@ -159,39 +159,32 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (width: 320px) {
     .container{
         display: grid;
         grid-template-columns: 1fr;
     }
 
     .section__cards{
-        height: 50%;
+        height: 30vh;
         width: 100%;
 
         .image__card-front{
             position: relative;
-            top: 38.8%;
-            left: 1%;
-            transform: scale(0.7);
+            top: 11%;
+            transform: translate(-41%, 0) scale(0.45);
             z-index: 2;
         }
     
         .image__card-back{
             position: relative;
-            top: 0;
-            left: 9.5%;
-            transform: translate( 0, -100%) scale(0.7);
+            top: -23%;
+            transform: translate( -51%, -100%) scale(0.45);
             z-index: 1;
         }
     }
 
     .section__form{
-        position: relative;
-        left: 8%;
-    
-        .form-data{
-            
-        }
+        
     }
 }
