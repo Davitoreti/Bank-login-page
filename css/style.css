@@ -134,7 +134,7 @@
   font-size: 17px;
 }
 
-@media (min-width: 320px) and (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -158,13 +158,13 @@
     position: absolute;
     top: 8%;
     left: 49%;
-    transform: scale(0.55) translate(-80%, -54%);
+    transform: scale(0.55) translate(-78%, -54%);
     z-index: 0;
   }
   .section__form {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-right: 0;
+    margin: 3rem 0rem;
+    margin-left: 3rem;
+    width: 85%;
   }
   .section__form label {
     font-size: 0.7rem;
@@ -174,6 +174,146 @@
   }
   .section__form .form-button {
     font-size: 0.9rem;
+  }
+}
+@media (min-width: 426px) and (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .section__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+  .section__cards .image__card-front {
+    position: relative;
+    top: 35%;
+    left: 1%;
+    transform: scale(0.7) translate(-15%, 0);
+    z-index: 1;
+  }
+  .section__cards .image__card-back {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: scale(0.7) translate(-59%, -33%);
+    z-index: 0;
+  }
+  .section__form {
+    margin: 3rem 0;
+    margin-left: 3rem;
+    width: 85%;
+  }
+  .section__form label {
+    font-size: 0.8rem;
+  }
+  .section__form input::placeholder {
+    font-size: 0.9rem;
+  }
+  .section__form .form-button {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 600px) {
+  .section__cards .image__card-front {
+    position: relative;
+    left: 0%;
+    transform: scale(0.45) translate(-53%, 0);
+    width: 28rem;
+  }
+  .section__cards .image__card-back {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: scale(0.45) translate(-38%, -35%);
+    width: 28rem;
+  }
+  .section__form {
+    margin-left: 1.5rem;
+    width: 90%;
+    overflow: hidden;
+  }
+  .section__form label {
+    font-size: 0.6rem;
+  }
+  .section__form input::placeholder {
+    font-size: 0.7rem;
+  }
+  .section__form .form-button {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  .section__cards {
+    width: 30vw;
+  }
+  .section__cards .image__card-front {
+    position: relative;
+    left: 0%;
+    transform: scale(0.52) translate(-27%, 0);
+    width: 28rem;
+  }
+  .section__cards .image__card-back {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: scale(0.52) translate(-10%, -15%);
+    width: 28rem;
+  }
+  .section__form {
+    margin-left: 2rem;
+    width: 89%;
+    overflow: hidden;
+  }
+  .section__form label {
+    font-size: 0.7rem;
+  }
+  .section__form input::placeholder {
+    font-size: 0.9rem;
+  }
+  .section__form .form-button {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1150px) {
+  .section__cards {
+    width: 30vw;
+  }
+  .section__cards .image__card-front {
+    position: relative;
+    left: 0%;
+    transform: scale(0.7) translate(0, -15%);
+    width: 28rem;
+  }
+  .section__cards .image__card-back {
+    position: relative;
+    top: 0;
+    left: 20%;
+    transform: scale(0.7);
+    width: 28rem;
+  }
+}
+@media (min-width: 1151px) and (max-width: 1440px) {
+  .section__cards {
+    width: 30vw;
+  }
+  .section__cards .image__card-front {
+    position: relative;
+    top: 7%;
+    left: 25%;
+    transform: scale(0.8);
+    width: 28rem;
+  }
+  .section__cards .image__card-back {
+    position: relative;
+    top: 2%;
+    left: 45%;
+    transform: scale(0.8);
+    width: 28rem;
   }
 }
 
