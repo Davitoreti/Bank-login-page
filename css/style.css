@@ -176,7 +176,7 @@
     font-size: 0.9rem;
   }
 }
-@media (min-width: 426px) and (max-width: 480px) {
+@media (min-width: 425px) and (max-width: 480px) {
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -191,14 +191,14 @@
   }
   .section__cards .image__card-front {
     position: relative;
-    top: 35%;
+    top: 38%;
     left: 1%;
     transform: scale(0.7) translate(-15%, 0);
     z-index: 1;
   }
   .section__cards .image__card-back {
     position: absolute;
-    top: 10%;
+    top: 12%;
     left: 50%;
     transform: scale(0.7) translate(-59%, -33%);
     z-index: 0;
@@ -303,14 +303,14 @@
   }
   .section__cards .image__card-front {
     position: relative;
-    top: 7%;
+    top: 9%;
     left: 25%;
     transform: scale(0.8);
     width: 28rem;
   }
   .section__cards .image__card-back {
     position: relative;
-    top: 2%;
+    top: 4%;
     left: 45%;
     transform: scale(0.8);
     width: 28rem;

@@ -1,0 +1,9 @@
+@mixin cardNumbers ($letter-spacing, $color){
+    letter-spacing: $letter-spacing;
+    color: $color;
+}
+
+@mixin config-input ($width, $margin-top){
+    width: $width;
+    margin-top: $margin-top;
+}

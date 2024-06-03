@@ -1,12 +1,4 @@
-@mixin cardNumbers ($letter-spacing, $color){
-    letter-spacing: $letter-spacing;
-    color: $color;
-}
-
-@mixin config-input ($width, $margin-top){
-    width: $width;
-    margin-top: $margin-top;
-}
+@import "_functions.scss";
 
 * {
     margin: 0;
@@ -209,7 +201,7 @@
     }
 }
 
-@media (min-width: 426px) and (max-width: 480px){
+@media (min-width: 425px) and (max-width: 480px){
     .container{
         display: grid;
         grid-template-columns: 1fr;
@@ -225,7 +217,7 @@
         
         .image__card-front{
             position: relative;
-            top: 35%;
+            top: 38%;
             left: 1%;
             transform: scale(0.7) translate(-15%, 0);
             z-index: 1;
@@ -233,7 +225,7 @@
     
         .image__card-back{
             position: absolute;
-            top: 10%;
+            top: 12%;
             left: 50%;
             transform: scale(0.7) translate(-59%, -33%);
             z-index: 0;
@@ -359,7 +351,7 @@
         width: 30vw;
         .image__card-front{
             position: relative;
-            top: 7%;
+            top: 9%;
             left: 25%;
             transform: scale(0.8);
             width: 28rem;
@@ -367,7 +359,7 @@
 
         .image__card-back{
             position: relative;
-            top: 2%;
+            top: 4%;
             left: 45%;
             transform: scale(0.8);
             width: 28rem;
